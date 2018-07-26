@@ -160,28 +160,30 @@ h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
-.main {
-	display: flex;
-	max-width: 880px;
-	margin: 0 auto;
-}
-
 body {
-	max-width: 880px;
-	margin: 0 auto;
+	  display: flex;
+	  justify-content: center;
+}
+.container {
+
+	width: 880px;
+
 }
 
-p {
-	line-height: 1.2;
-}
+
 header {
-	
+	border: 5px solid orangered;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+	width: 880px;
 }
 
 nav {
-	
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
 	position: fixed;
 	background-color: #333;
 	overflow: hidden;
@@ -191,7 +193,7 @@ nav {
 }
 
 nav a {
-	color: #f2f2f2;
+		color: #f2f2f2;
 	text-align: center;
 	text-decoration: none;
 	margin: 0 70px 0 10px;
@@ -201,51 +203,57 @@ nav a {
 nav a:hover {
 	background: #ddd;
 	color: black;
-	margin: 0 70px 0 10px;
-	padding: 10px 5px 10px 5px;
+	padding: 10px;
 }
 
 .logo {
+
 	margin: 0 0 0 880px;
 	position: fixed;
 
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 77px;
 	text-align: center;
 }
-.top main {
-	display: flex;
-	margin-top: 40px;
-}
+
 .top {
-	margin:35px;
+	border: 10px solid goldenrod;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 880px;
+	margin: 50px 0;
+}
+.top main {
+ justify-content: center;
+}
+.top-text {
+	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.top-text {
-	flex-direction: column;
-	align-items: center;
-	align-content: center;
-	flex: 1;
-}
-
 .top-img {
-	padding: 0px 0 35px 0;
-}
+	justify-content: center;
 
+}
 .btn {
-	border: none;
-	color: white;
-	padding: 14px 28px;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	box-shadow: 1px 1px 0;
+	background-color: white;
+	padding: 5px 40px 5px 40px;
 	font-size: 16px;
 	cursor: pointer;
+	
 }
 
 .default {
-	background-color: #e7e7e7;
+	background-color: white;
 	color: black;
 	border: 1px solid black;
 }
